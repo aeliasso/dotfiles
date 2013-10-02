@@ -1,0 +1,51 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+ '(create-lockfiles nil)
+ '(custom-enabled-themes (quote (deeper-blue)))
+ '(fill-column 83)
+ '(inhibit-startup-screen t)
+ '(tab-width 4)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+;(set-face-attribute 'default nil :height 120)
+
+; markdown-mode skickas bara med nyare Emacs-versioner
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\.md" . markdown-mode) auto-mode-alist))
+
+; Visa radnummer
+(global-linum-mode t)
+; Bryt rader vid ordgränser
+(global-visual-line-mode t)
+; Räkna kolumner (rader räknas som standard)
+(column-number-mode t)
+; Max radbredd innan ett nyradstecken sätts in då bl.a. fill-paragraph körs
+(setq-default fill-column 88)
+
+(require 'magit)
+
+; Ett tabulatortecken är 4 tecken brett (standard: 8)
+(setq-default tab-width 4)
+; Använd mellanslag istället för tabulatortecken
+(setq-default indent-tabs-mode nil)
+; Tabulatorstopp vartannat tecken (standard: 4)
+(setq-default c-basic-offset 2)
+
+; Auctex
+;(load "auctex.el" nil t t)
+;(load "preview-latex.el" nil t t)
+
+; lua mode
+(setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)

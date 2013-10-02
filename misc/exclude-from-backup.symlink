@@ -1,0 +1,11 @@
+.local/share/Trash
+Hämtningar
+tmp
+.cache
+.thumbnails
+.ccache
+games
+.local/share/Steam/SteamApps/common
+mnt
+build
+.local/share/gvfs-metadata
