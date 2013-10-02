@@ -108,10 +108,6 @@ alias sudo='sudo ' # låter aliaser passera genom sudo
 alias mv='mv -i'
 alias cp='cp -i'
 
-# xxx
-alias fap='xrandr -o left'
-alias unfap='xrandr -o normal'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -133,14 +129,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Funktion som tankar WebM från Youtube, i högsta möjliga kvalitet.
-ytdl () { for i in "$@"; do youtube-dl -o '%(title)s.%(ext)s' -f 46 "$i" || youtube-dl -o '%(title)s.%(ext)s' -f 45 "$i" || youtube-dl -o '%(title)s.%(ext)s' -f 44 "$i" || youtube-dl -o '%(title)s.%(ext)s' -f 43 "$i"; done; }
-
 # Funktion från skriptsamlingen som extraherar ljud från mediecontainrar (ex. MP4/WebM från YouTube)
 aextract () { ffmpeg -i "$1" -vn -acodec copy -- "$2"; }
-
-dödalätt () { pkill -15 "$1" || echo "$1 finns inte"; }
-dödahårt () { pkill -9 "$1" || echo "$1 finns inte"; }
 
 process () { ps -fp $(pgrep -d, -x "$1"); }
 
