@@ -1,0 +1,61 @@
+#vbell on
+
+# detach on hangup
+autodetach on
+
+# don't display the copyright page
+startup_message off
+ 
+# emulate .logout message
+#pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+defscrollback 1000
+
+################
+#
+# keybindings
+#
+
+# Ändra escape-knapp från C-a till C-t
+escape ^T^T
+
+# Alt+Backspace
+bindkey ^[* stuff ^[^?
+
+bindkey ^[/ stuff ^[-
+#bindkey \302\261 stuff \
+
+# Höger Alt + <
+#bindkey \342\211\244 stuff ^[<
+# Höger Alt + > funkar inte
+#bindkey \342\211\245 stuff ^[>
+# Alt + <
+bindkey ^[` stuff ^[<
+
+#Remove some stupid / dangerous key bindings
+bind .
+bind ^h
+bind h
+#make them better
+ 
+################
+#
+# default windows
+#
+ 
+# screen -t local 0
+# screen -t mail 1 elm
+# screen -t 40 2 rlogin faui40
+ 
+# caption always "%3n %t%? @%u%?%? [%h]%?"
+# hardstatus alwaysignore
+# hardstatus alwayslastline "%w"
+ 
+# bind = resize =
+# bind + resize +1
+# bind - resize -1
+# bind _ resize max
+#
+# attrcolor u "-u b"
+# attrcolor b "R"
+ 
