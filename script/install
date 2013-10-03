@@ -4,7 +4,15 @@
 
 set -e
 
-cd "$(dirname $)"/..
+if [ -z "$ZSH" ]; then
+    echo "The ZSH variable is not set. Exiting."
+    exit 1
+fi
+
+# cd dotfiles root
+pushd "$ZSH" >/dev/null
 
 # find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+find . -name install.sh -exec {} \;
+
+popd >/dev/null
