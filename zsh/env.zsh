@@ -5,3 +5,5 @@ fi
 
 # less själv och git (log) läser denna miljövariabel
 export LESS='--ignore-case --long-prompt --RAW-CONTROL-CHARS'
+
+export PATH="$HOME/bin:$PATH"
