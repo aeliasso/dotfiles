@@ -385,6 +385,11 @@ awful.rules.rules = {
     -- Set Firefox to always map on tags number 2 of screen 1.
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
+    -- Thunar's file copy dialog. In the Land of Make Believe, this would match
+    -- something more reliable than the localized window title
+    { rule = { class = "Thunar",
+               name = "Förlopp för filåtgärder" },
+      properties = { floating = true } },
 }
 -- }}}
 
