@@ -390,6 +390,8 @@ awful.rules.rules = {
     { rule = { class = "Thunar",
                name = "Förlopp för filåtgärder" },
       properties = { floating = true } },
+    { rule = { instance = "plugin-container" },
+      properties = { floating = true } },
 }
 -- }}}
 
