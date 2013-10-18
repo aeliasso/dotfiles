@@ -392,6 +392,9 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { instance = "plugin-container" },
       properties = { floating = true } },
+    -- Google Hangouts. class is "Chromium"
+    { rule = { instance = "crx_nckgahadagoaajjgafhacjanaoiihapd" },
+      properties = { floating = true } },
 }
 -- }}}
 
