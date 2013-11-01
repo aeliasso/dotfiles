@@ -17,6 +17,11 @@ alias la='ls -la'
 alias mv='mv -i'
 alias cp='cp -i'
 
+# Felstavningar
+alias pytohn=python
+alias pytohn2=python2
+alias pytohn3=python3
+
 # Diverse
 alias md='mkdir'
 
