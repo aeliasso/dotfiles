@@ -15,6 +15,6 @@ alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
-alias gstat='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gs='git status -sb' # let's not think too much about ghostscript (gs)
 alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
            perl -pe 's/^[ \t]*//' | sed 's/ /\\\\ /g' | xargs git rm"

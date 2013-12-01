@@ -33,7 +33,9 @@
 ; Räkna kolumner (rader räknas som standard)
 (column-number-mode t)
 
-(require 'magit)
+; Om tredje argumentet till require är non-nil visas inget fel om importen
+; misslyckas
+(require 'magit nil t)
 
 ; Använd mellanslag istället för tabulatortecken
 (setq-default indent-tabs-mode nil)
@@ -48,3 +50,7 @@
 ; lua mode
 (setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+
+(require 'iso-transl)
+
+(setq-default cursor-type 'bar)
