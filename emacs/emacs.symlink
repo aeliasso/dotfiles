@@ -52,3 +52,5 @@
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 
 (require 'iso-transl)
+
+(setq-default cursor-type 'bar)
