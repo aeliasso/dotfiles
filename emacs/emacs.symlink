@@ -17,6 +17,19 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+; Visa radnummer
+(global-linum-mode t)
+; Bryt rader vid ordgränser
+(global-visual-line-mode t)
+; Räkna kolumner (rader räknas som standard)
+(column-number-mode t)
+; Använd mellanslag istället för tabulatortecken
+(setq-default indent-tabs-mode nil)
+; Tabulatorstopp vartannat tecken (standard: 4)
+(setq-default c-basic-offset 4)
+; tab-width = bredden på ett tabulatortecken
+
+(setq-default cursor-type 'bar)
 
 ;(set-face-attribute 'default nil :height 120)
 
@@ -26,31 +39,16 @@
 (setq auto-mode-alist
    (cons '("\.md" . markdown-mode) auto-mode-alist))
 
-; Visa radnummer
-(global-linum-mode t)
-; Bryt rader vid ordgränser
-(global-visual-line-mode t)
-; Räkna kolumner (rader räknas som standard)
-(column-number-mode t)
-
-; Om tredje argumentet till require är non-nil visas inget fel om importen
-; misslyckas
-(require 'magit nil t)
-
-; Använd mellanslag istället för tabulatortecken
-(setq-default indent-tabs-mode nil)
-; Tabulatorstopp vartannat tecken (standard: 4)
-(setq-default c-basic-offset 4)
-; tab-width = bredden på ett tabulatortecken
+; Magit
+(require 'magit nil :noerror)
 
 ; Auctex
-;(load "auctex.el" nil t t)
-;(load "preview-latex.el" nil t t)
+(load "auctex.el" :noerror :nomessage :nosuffix)
+(load "preview-latex.el" :noerror :nomessage :nosuffix)
 
 ; lua mode
 (setq auto-mode-alist (cons '("\.lua$" . lua-mode) auto-mode-alist))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 
+; Workaround för att fixa döda tangenter
 (require 'iso-transl)
-
-(setq-default cursor-type 'bar)
