@@ -9,6 +9,7 @@
  '(custom-enabled-themes (quote (deeper-blue)))
  '(fill-column 80)
  '(inhibit-startup-screen t)
+ '(sentence-end-double-space nil)
  '(tab-width 4)
  '(tool-bar-mode nil))
 (custom-set-faces
