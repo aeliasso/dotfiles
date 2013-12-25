@@ -1,0 +1,7 @@
+amdfan () {
+    case $1 in
+        'get') DISPLAY=:0.$2 aticonfig --pplib-cmd 'get fanspeed 0' ;;
+        'set') DISPLAY=:0.$2 aticonfig --pplib-cmd "set fanspeed $3" ;;
+        *) echo "USAGE: $0 <get/set> <GPU> [percentage]" ;;
+    esac
+}
