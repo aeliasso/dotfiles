@@ -5,3 +5,7 @@ amdfan () {
         *) echo "USAGE: $0 <get/set> <GPU> [percentage]" ;;
     esac
 }
+
+amdtemp () {
+    DISPLAY=:0 aticonfig --odgt --adapter=all
+}
