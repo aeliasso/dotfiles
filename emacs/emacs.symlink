@@ -43,6 +43,10 @@
 ; Magit
 (require 'magit nil :noerror)
 
+; Scala mode
+(add-to-list 'load-path "/usr/share/emacs/scala-mode")
+(require 'scala-mode-auto nil :noerror)
+
 ; Auctex
 (load "auctex.el" :noerror :nomessage :nosuffix)
 (load "preview-latex.el" :noerror :nomessage :nosuffix)
