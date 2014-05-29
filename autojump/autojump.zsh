@@ -5,6 +5,8 @@
 # /etc/zsh/zprofile laddar /etc/profile
 # /etc/zsh/zprofile körs endast i login-skal. Barn-skal ärver satta miljövariabler men inte definierade funktioner.
 #
+# Källa: zsh(1): STARTUP/SHUTDOWN FILES
+#
 # Därför måste /etc/profile.d/autojump.zsh laddas manuellt i en användardefinierad zsh-konfigurationsfil.
 
 if [ -f /etc/profile.d/autojump.zsh ]; then
