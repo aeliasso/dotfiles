@@ -6,13 +6,12 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 
-setopt SHARE_HISTORY # share history between sessions ???
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt COMPLETE_IN_WORD
 
-setopt APPEND_HISTORY # adds history
+setopt APPEND_HISTORY
 setopt autocd
-setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
+setopt INC_APPEND_HISTORY # add history incrementally, whatever that means
 # Spara inte efterföljande dubletter i historiken
 setopt HIST_IGNORE_DUPS
 # Spara inte kommandorader som börjar med ett mellanslag i historiken
