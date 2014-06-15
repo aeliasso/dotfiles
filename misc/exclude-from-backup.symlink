@@ -10,3 +10,9 @@ mnt
 build
 .local/share/gvfs-metadata
 vmware
+.bitcoin/blocks
+.bitcoin/chainstate
+.litecoin/blocks
+.litecoin/chainstate
+.dogecoin/blocks
+.dogecoin/chainstate
