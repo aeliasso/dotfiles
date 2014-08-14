@@ -10,7 +10,6 @@ setopt EXTENDED_HISTORY # add timestamps to history
 setopt COMPLETE_IN_WORD
 
 setopt APPEND_HISTORY
-setopt autocd
 setopt INC_APPEND_HISTORY # add history incrementally, whatever that means
 # Spara inte efterföljande dubletter i historiken
 setopt HIST_IGNORE_DUPS
