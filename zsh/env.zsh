@@ -7,3 +7,6 @@ fi
 export LESS='--ignore-case --long-prompt --RAW-CONTROL-CHARS'
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# http://insanecoding.blogspot.se/2014/04/gcc-49-diagnostics.html
+export GCC_COLORS=1
