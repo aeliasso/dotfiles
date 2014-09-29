@@ -10,5 +10,7 @@
 # Därför måste /etc/profile.d/autojump.zsh laddas manuellt i en användardefinierad zsh-konfigurationsfil.
 
 if [ -f /etc/profile.d/autojump.zsh ]; then
-   source /etc/profile.d/autojump.zsh
+    source /etc/profile.d/autojump.zsh
+elif [ -f /usr/share/autojump/autojump.zsh ]; then
+    source /usr/share/autojump/autojump.zsh
 fi
