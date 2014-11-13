@@ -64,3 +64,8 @@
 
 ; Workaround för att fixa döda tangenter
 (require 'iso-transl)
+
+; Stavningskontroll
+;(add-to-list 'load-path "~/.emacs.d/elpa/rw-hunspell-2.0")
+;(setq ispell-program-name "hunspell")
+;(autoload 'rw-hunspell "rw-hunspell")
