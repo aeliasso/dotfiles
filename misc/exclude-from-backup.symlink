@@ -9,7 +9,6 @@ games
 mnt
 build
 .local/share/gvfs-metadata
-vmware
 .bitcoin/blocks
 .bitcoin/chainstate
 .litecoin/blocks
