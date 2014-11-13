@@ -23,6 +23,7 @@
  )
 ; Visa radnummer
 (global-linum-mode t)
+; TODO: bara linum-mode för kod, inte för fundamental, org eller latex
 ; Bryt rader vid ordgränser
 (global-visual-line-mode t)
 ; Räkna kolumner (rader räknas som standard)
