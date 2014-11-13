@@ -69,3 +69,6 @@
 ;(add-to-list 'load-path "~/.emacs.d/elpa/rw-hunspell-2.0")
 ;(setq ispell-program-name "hunspell")
 ;(autoload 'rw-hunspell "rw-hunspell")
+
+; Pretty source code in Org code blocks (doesn't affect export)
+(setq org-src-fontify-natively t)
