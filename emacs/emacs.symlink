@@ -8,6 +8,7 @@
  '(create-lockfiles nil)
  '(custom-enabled-themes (quote (deeper-blue)))
  '(fill-column 80)
+ '(glyphless-char-display-control (quote ((format-control . acronym) (no-font . hex-code))))
  '(inhibit-startup-screen t)
  '(mouse-wheel-progressive-speed nil)
  '(mouse-wheel-scroll-amount (quote (3 ((shift) . 1) ((control)))))
