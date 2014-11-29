@@ -83,3 +83,6 @@
                  (concat user-emacs-directory "autosaves/")))
 (setq auto-save-file-name-transforms
       `((".*" ,auto-save-dir t)))
+
+;; User local load path
+(add-to-list 'load-path "~/.emacs.d/lisp/")
