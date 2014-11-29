@@ -73,3 +73,13 @@
 
 ; Pretty source code in Org code blocks (doesn't affect export)
 (setq org-src-fontify-natively t)
+
+;; Save backup and auto-save files in a central location
+(setq backup-directory-alist
+      `(("." . ,(expand-file-name
+                 (concat user-emacs-directory "backups")))))
+; Directory name => Must have trailing slash
+(defconst auto-save-dir (expand-file-name
+                 (concat user-emacs-directory "autosaves/")))
+(setq auto-save-file-name-transforms
+      `((".*" ,auto-save-dir t)))
