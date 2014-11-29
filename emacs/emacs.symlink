@@ -85,7 +85,7 @@
       `((".*" ,auto-save-dir t)))
 
 ;; User local load path
-(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
 
 ;; Save files under version control automatically
 ;(require 'real-auto-save)
