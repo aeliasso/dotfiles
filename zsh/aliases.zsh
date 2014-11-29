@@ -11,7 +11,8 @@ fi
 # ls-varianter
 alias l='ls -l'
 alias ll='ls -lh'
-alias la='ls -la'
+alias la='ll -a'
+alias ltr='ll -atr'
 
 # Safety first
 alias mv='mv -i'
