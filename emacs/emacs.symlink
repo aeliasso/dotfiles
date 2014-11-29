@@ -86,3 +86,8 @@
 
 ;; User local load path
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+
+;; Save files under version control automatically
+;(require 'real-auto-save)
+; ... how?
+;(eval-after-load "vc-git" 'turn-on-real-auto-save)
