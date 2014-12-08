@@ -1,0 +1,7 @@
+# Moronic workarounds for moronic programs
+function pdflatex () {
+    /usr/bin/pdflatex -interaction=nonstopmode $@ && /usr/bin/pdflatex -interaction=nonstopmode $@
+    local err=$?
+    [ $err -ne 0 ] && echo -e '\nFAILED'
+    return $err
+}
