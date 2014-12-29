@@ -1,0 +1,2 @@
+# http://askubuntu.com/questions/195489/added-key-but-dget-still-shows-gpg-cant-check-signature-public-key-not-foun
+DSCVERIFY_KEYRINGS="/etc/apt/trusted.gpg:~/.gnupg/pubring.gpg"

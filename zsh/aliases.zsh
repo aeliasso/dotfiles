@@ -35,3 +35,6 @@ alias administrera='screen -q -D -R administrera'
 
 # https://github.com/kyamagu/mexopencv/issues/74
 alias matlab='LD_PRELOAD=/usr/lib/libfreetype.so matlab'
+
+# What should be the default behavior of cp
+alias copy='/bin/cp --interactive --recursive --no-dereference --preserve=mode,timestamps,links,xattr --no-preserve=ownership --sparse=always --one-file-system'
