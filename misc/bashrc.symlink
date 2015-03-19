@@ -149,3 +149,5 @@ export EDITOR=emacs
 
 # virtualenvwrapper vill ha
 export PROJECT_HOME=~/devel/Python
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

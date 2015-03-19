@@ -6,7 +6,7 @@ fi
 # less själv och git (log) läser denna miljövariabel
 export LESS='--ignore-case --long-prompt --RAW-CONTROL-CHARS'
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.rvm/bin:$PATH"
 
 # http://insanecoding.blogspot.se/2014/04/gcc-49-diagnostics.html
 export GCC_COLORS=1
