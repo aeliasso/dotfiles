@@ -1,0 +1,7 @@
+# Moronic workarounds for moronic programs
+function xelatex () {
+    /usr/bin/xelatex -interaction=nonstopmode $@ && /usr/bin/xelatex -interaction=nonstopmode $@
+    local err=$?
+    [ $err -ne 0 ] && echo -e '\nFAILED'
+    return $err
+}
