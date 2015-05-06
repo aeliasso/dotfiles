@@ -23,8 +23,12 @@ alias pytohn=python
 alias pytohn2=python2
 alias pytohn3=python3
 
-# Diverse
-alias md='mkdir'
+## Diverse
+# Make directory(s) and cd into the last (because I tend to put -p before the
+# path name more often than after)
+function md () {
+    mkdir $@ && cd "${@: -1}"
+}
 
 # Detta behövs faktiskt:
 alias sudo='sudo '
