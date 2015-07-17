@@ -18,3 +18,8 @@ export PATH="$HOME/.local/bin:$HOME/.rvm/bin:$NPM_PACKAGES/bin:$PATH"
 
 # http://insanecoding.blogspot.se/2014/04/gcc-49-diagnostics.html
 export GCC_COLORS=1
+
+# GNU GLOBAL compiled from source with support for exuberant-ctags and installed
+# in /usr/local (see global-6.5/plugin-factory/PLUGIN_HOWTO.pygments).
+export GTAGSCONF=/usr/local/share/gtags/gtags.conf
+export GTAGSLABEL=pygments
