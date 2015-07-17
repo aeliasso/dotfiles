@@ -6,6 +6,9 @@ if [ -f /usr/bin/virtualenvwrapper.sh ]; then
     source /usr/bin/virtualenvwrapper.sh
 elif [ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]; then
      source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+elif [ -f /etc/bash_completion.d/virtualenvwrapper ]; then
+     # Debian
+     source /etc/bash_completion.d/virtualenvwrapper
 fi
 
 # låter pip cacha sina nerladdade paket (internetåtkomst krävs dock fortfarande)
