@@ -33,10 +33,6 @@ function md () {
 # Detta behövs faktiskt:
 alias sudo='sudo '
 
-# Genväg till screen-sessioner
-alias programmera='screen -q -D -R programmera'
-alias administrera='screen -q -D -R administrera'
-
 # https://github.com/kyamagu/mexopencv/issues/74
 alias matlab='LD_PRELOAD=/usr/lib/libfreetype.so matlab'
 
