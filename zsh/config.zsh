@@ -29,7 +29,9 @@ prompt zefram
 # TODO: användare/root och hosts i olika färger
 
 # Några tecken ska inte behandlas som om de ingick i ord
-export WORDCHARS=${WORDCHARS//[=\/&;<>]}
+#export WORDCHARS=${WORDCHARS//[=\/&;<>]}
+autoload select-word-style
+select-word-style bash
 
 # emacs bindings
 bindkey -e
