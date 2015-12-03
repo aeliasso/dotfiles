@@ -5,7 +5,7 @@ tmp
 .thumbnails
 .ccache
 games
-.local/share/Steam/SteamApps/common
+.local/share/Steam/SteamApps
 mnt
 build
 .local/share/gvfs-metadata

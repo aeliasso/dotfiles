@@ -6,4 +6,4 @@ zstyle ':completion:*' insert-tab pending
 
 # Gör att Zsh inte litar på sin cache vid autocompletion
 # http://unix.stackexchange.com/questions/2179/rebuild-auto-complete-index-or-whatever-its-called
-zstyle ":completion:*:commands" rehash 1
+#zstyle ":completion:*:commands" rehash 1
