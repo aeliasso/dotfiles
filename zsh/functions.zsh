@@ -10,3 +10,5 @@ genpw () { dd if=/dev/urandom bs=16 count=1 2>/dev/null | base64 | cut -c-16; }
 # Söv datorn via D-BUS
 söv () { dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend; }
 
+# Expected behaviour of apt-cache search
+apt-search () { apt-cache search $1 | grep -i $1 }
