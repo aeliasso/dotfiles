@@ -32,3 +32,9 @@ function md () {
 
 # What should be the default behavior of cp
 alias copy='/bin/cp --interactive --recursive --no-dereference --preserve=mode,timestamps,links,xattr --no-preserve=ownership --sparse=always --one-file-system'
+
+# Its finally possible to hide the annoying banner in ffmpeg tools!
+alias ffmpeg='ffmpeg -hide_banner'
+alias ffplay='ffplay -hide_banner'
+alias ffprobe='ffprobe -hide_banner'
+alias ffserver='ffserver -hide_banner'
