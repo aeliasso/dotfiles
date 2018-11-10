@@ -1,5 +1,5 @@
-export EDITOR='emacs'
-export VISUAL='emacs'
+export EDITOR='emacsclient -t'
+export VISUAL='emacsclient -c -a emacs'
 
 # less själv och git (log) läser denna miljövariabel
 export LESS='--ignore-case --long-prompt --RAW-CONTROL-CHARS'
@@ -21,5 +21,6 @@ export GCC_COLORS=1
 
 # GNU GLOBAL compiled from source with support for exuberant-ctags and installed
 # in /usr/local (see global-6.5/plugin-factory/PLUGIN_HOWTO.pygments).
-export GTAGSCONF=/usr/local/share/gtags/gtags.conf
+## Now installed from repo, so commented out
+#export GTAGSCONF=/usr/local/share/gtags/gtags.conf
 export GTAGSLABEL=pygments

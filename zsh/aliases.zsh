@@ -38,3 +38,9 @@ alias ffmpeg='ffmpeg -hide_banner'
 alias ffplay='ffplay -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 alias ffserver='ffserver -hide_banner'
+
+alias ec='emacsclient -n'
+
+# Quiet gdb's copyright babble
+alias gdb='gdb -q'
+alias rungdb='rungdb -q'
