@@ -9,7 +9,7 @@ startup_message off
 # emulate .logout message
 #pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
 
-defscrollback 1000
+defscrollback 10000
 
 ################
 #
@@ -59,3 +59,5 @@ bind h
 # attrcolor u "-u b"
 # attrcolor b "R"
  
+# Enable mouse scrolling and scroll bar history scrolling
+termcapinfo xterm* ti@:te@
