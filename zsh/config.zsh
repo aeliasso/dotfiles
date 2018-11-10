@@ -3,8 +3,8 @@ fpath=($ZSH/functions $fpath)
 autoload -U $ZSH/functions/*(:t)
 
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt COMPLETE_IN_WORD
