@@ -17,3 +17,4 @@ alias gpa='for x in $(git remote); do git push "$x" master || break; done'
 alias gd='git diff'
 alias gc='git commit'
 alias gs='git status -sb' # let's not think too much about ghostscript (gs)
+alias gg='git grep'
