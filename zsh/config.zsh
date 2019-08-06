@@ -41,3 +41,7 @@ bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
 # Tabba bakåt mellan förslag med skift+tab
 bindkey '^[[Z' reverse-menu-complete
+
+# http://zsh.sourceforge.net/FAQ/zshfaq04.html#l50
+setopt AUTO_LIST
+unsetopt LIST_AMBIGUOUS
