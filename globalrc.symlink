@@ -1,0 +1,5 @@
+# Don't index oe-workdir (a symlink outside the source directory).
+# Trailing slash required on directories.
+
+default:\
+	:skip=oe-logs/,oe-workdir/
