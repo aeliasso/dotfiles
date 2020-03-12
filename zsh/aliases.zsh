@@ -43,4 +43,3 @@ alias ec='emacsclient -n'
 
 # Quiet gdb's copyright babble
 alias gdb='gdb -q'
-alias rungdb='rungdb -q'
