@@ -23,4 +23,7 @@ export GCC_COLORS=1
 # in /usr/local (see global-6.5/plugin-factory/PLUGIN_HOWTO.pygments).
 ## Now installed from repo, so commented out
 #export GTAGSCONF=/usr/local/share/gtags/gtags.conf
-export GTAGSLABEL=pygments
+# Clashes with my .globalrc:
+# gtags: label 'pygments' not found.
+# so unsetting:
+#export GTAGSLABEL=pygments
