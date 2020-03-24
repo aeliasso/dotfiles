@@ -8,3 +8,6 @@ set history save
 set history filename ~/.local/share/gdb_history
 
 set disassembly-flavor intel
+
+# disable "Type <return> to continue, or q <return> to quit"
+set pagination off
