@@ -45,3 +45,7 @@ bindkey '^[[Z' reverse-menu-complete
 # http://zsh.sourceforge.net/FAQ/zshfaq04.html#l50
 setopt AUTO_LIST
 unsetopt LIST_AMBIGUOUS
+
+# Ctrl+arrowkeys
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
