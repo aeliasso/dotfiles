@@ -39,7 +39,9 @@ alias ffplay='ffplay -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 alias ffserver='ffserver -hide_banner'
 
-alias ec='emacsclient -n'
+alias e='emacsclient -n'
+alias ec='emacsclient --create-frame --no-wait --alternate-editor=""'
+
 
 # Quiet gdb's copyright babble
 alias gdb='gdb -q'
