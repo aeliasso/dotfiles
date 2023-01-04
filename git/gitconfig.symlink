@@ -16,3 +16,5 @@
 	pager = less
 [pull]
 	ff = only
+[rebase]
+	autoSquash = true
