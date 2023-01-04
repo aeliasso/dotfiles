@@ -13,7 +13,7 @@
 	default = upstream
 	followTags = true
 [core]
-	pager = less
+	pager = less -F
 [pull]
 	ff = only
 [rebase]
