@@ -47,3 +47,7 @@ autoload bashcompinit && bashcompinit
 
 # kworkflow
 [ -f /home/antone/.local/lib/kw/bash_autocomplete.sh ] && source /home/antone/.local/lib/kw/bash_autocomplete.sh
+
+# For Tilix
+# https://github.com/gnunn1/tilix/wiki/VTE-Configuration-Issue
+source /etc/profile.d/vte-2.91.sh
