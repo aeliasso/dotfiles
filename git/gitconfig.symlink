@@ -17,3 +17,7 @@
 	ff = only
 [rebase]
 	autoSquash = true
+[log]
+	decorate = auto
+[format]
+	pretty = fuller
