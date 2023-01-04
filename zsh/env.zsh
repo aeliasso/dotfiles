@@ -2,7 +2,7 @@ export EDITOR='emacsclient -t'
 export VISUAL='emacsclient -c -a emacs'
 
 # less själv och git (log) läser denna miljövariabel
-export LESS='--ignore-case --long-prompt --RAW-CONTROL-CHARS'
+export LESS='--ignore-case --long-prompt --RAW-CONTROL-CHARS --jump-target=.5'
 
 # NPM packages in homedir
 export NPM_PACKAGES="$HOME/.npm-packages"
