@@ -44,3 +44,6 @@ unset config_files
 
 # Enable bash completion for zsh
 autoload bashcompinit && bashcompinit
+
+# kworkflow
+[ -f /home/antone/.local/lib/kw/bash_autocomplete.sh ] && source /home/antone/.local/lib/kw/bash_autocomplete.sh
