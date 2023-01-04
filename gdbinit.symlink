@@ -11,3 +11,5 @@ set disassembly-flavor intel
 
 # disable "Type <return> to continue, or q <return> to quit"
 set pagination off
+
+set auto-load safe-path /
