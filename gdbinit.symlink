@@ -1,7 +1,4 @@
-# Quit without asking for confirmation
-define hook-quit
-    set confirm off
-end
+set confirm off
 
 set history save
 # Don't clutter up the home dir
