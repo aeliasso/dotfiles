@@ -7,7 +7,8 @@ set history save
 # Don't clutter up the home dir
 set history filename ~/.local/share/gdb_history
 
-set disassembly-flavor intel
+# only for x86:
+#set disassembly-flavor intel
 
 # disable "Type <return> to continue, or q <return> to quit"
 set pagination off
