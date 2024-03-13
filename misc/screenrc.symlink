@@ -33,9 +33,14 @@ bindkey ^[/ stuff ^[-
 bindkey ^[` stuff ^[<
 
 #Remove some stupid / dangerous key bindings
+# dumptermcap
 bind .
+# hardcopy
 bind ^h
 bind h
+# lockscreen
+bind x
+bind ^x
 #make them better
  
 ################
