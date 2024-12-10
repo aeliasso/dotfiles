@@ -50,4 +50,6 @@ autoload bashcompinit && bashcompinit
 
 # For Tilix
 # https://github.com/gnunn1/tilix/wiki/VTE-Configuration-Issue
-source /etc/profile.d/vte-2.91.sh
+[ -f /etc/profile.d/vte-2.91.sh ] && source /etc/profile.d/vte-2.91.sh
+
+true
